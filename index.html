@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>🎃 神秘万圣节礼物</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="modal-backdrop" id="start-backdrop" aria-hidden="false">
+      <div class="modal">
+        <div class="titlebar">
+          <span class="icon">🎃</span>
+          <span class="title">张欣怡查收 🎁</span>
+        </div>
+        <div class="content">您有一份万圣节礼物，确定要打开吗？</div>
+        <div class="actions">
+          <button class="btn primary" id="confirm-btn">确定</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-layer"></div>
+  </div>
+
+  <audio id="bgMusic" preload="auto">
+    <source src="https://sf5-hl-cdn-tos.douyinstatic.com/obj/ies-music/7499771397531503370.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="app.js"></script>
+  <script src="1.js"></script>
+</body>
+</html>
